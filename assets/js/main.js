@@ -29,7 +29,7 @@ function createTable(espaceJeu, taille) {
             cell.id = [rows, cols];
             // Ajouter un event listener à chaque cellule. Si cliqué, appel la fonction jouer
             cell.addEventListener("click", (monEvent) => {
-                play(cell.id);
+                jouer(cell.id);
             }, {once : true})
             row.appendChild(cell);
         }
@@ -38,6 +38,7 @@ function createTable(espaceJeu, taille) {
     return monTable;
 }
 
+// Fonction qui va suivre le déroulement du jeu
 function jouer (cell) {
     tour *= -1;
     console.log(tour);
