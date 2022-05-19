@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Morpion</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -27,14 +27,11 @@
                     ligne, une colonne ou une diagonale.
                 </span>
             </div>
-            <div class="jeu">
-                <span></span>
-                <div class="jeu-grille">
-                </div>
-                <div class="gagne">
-                    <span id="gagne_span"></span>
-                    <input type="button" value="Rejouer" id="gagne_bouton" hidden>
-                </div>
+            <div class="jeu-grille">
+            </div>
+            <div class="gagne">
+                <span id="gagne_span"></span>
+                <input type="button" value="Rejouer" id="gagne_bouton" hidden>
             </div>
         </main>
         <footer>
