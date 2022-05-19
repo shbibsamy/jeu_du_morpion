@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Layout */
@@ -66,13 +67,24 @@ h2 {
 }
 
 table {
-    width: 100%;
+    width: 300px;
+    margin: auto;
     border-collapse: collapse;
 }
 
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
 td {
+    width: 33.3%;
     height: 80px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
 }
 
 /* Annoncer le gagner et rejouer */
@@ -87,9 +99,14 @@ td {
 #gagne_span {
     font-size: 1.2rem;
     text-transform: uppercase;
+    padding: 5%;
 }
 
 #gagne_bouton {
     margin: 2rem;
     font-size: 1.2rem;
+}
+
+.disabled {
+    pointer-events: none;
 }
