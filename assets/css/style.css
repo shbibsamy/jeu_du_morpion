@@ -48,12 +48,12 @@ h2 {
 
 /* Le jeu */
 /* boite */
-.jeu {
+
+.jeu-grille {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
-    width: 240px;
-    height: 240px;
 }
 
 .morpion-titre {
@@ -67,7 +67,7 @@ h2 {
 }
 
 table {
-    width: 300px;
+    width: 100%;
     margin: auto;
     border-collapse: collapse;
 }
@@ -78,13 +78,15 @@ tr {
 }
 
 td {
-    width: 33.3%;
-    height: 80px;
+    min-width: 60px;
+    min-height: 60px;
+    height: 100%;
+    width: 100%;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 /* Annoncer le gagner et rejouer */
@@ -99,14 +101,22 @@ td {
 #gagne_span {
     font-size: 1.2rem;
     text-transform: uppercase;
-    padding: 5%;
+    padding: 1%;
 }
 
 #gagne_bouton {
-    margin: 2rem;
+    margin: 1rem;
     font-size: 1.2rem;
 }
 
 .disabled {
     pointer-events: none;
+}
+
+.infos {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
