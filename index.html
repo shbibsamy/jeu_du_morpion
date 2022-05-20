@@ -28,10 +28,23 @@
                 </span>
             </div>
             <div class="jeu-grille">
+                <label for="taille">
+                    <span>Changer la taille de la grille</span>
+                    <select name="" id="taille">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
             </div>
             <div class="gagne">
                 <span id="gagne_span"></span>
                 <input type="button" value="Rejouer" id="gagne_bouton" hidden>
+            </div>
+            <div class="infos">
+                <h2>Informations</h2>
+                <p>J'ai créé ce jeu du morpion pour apprendre à manipuler le DOM. En suite, j'ai donné l'option de
+                    changer la taille de la grille pour m'offrir un challenge supplémentaire : détecter de manière dynamique qui a gagné.</p>
             </div>
         </main>
         <footer>
